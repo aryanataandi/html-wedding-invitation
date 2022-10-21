@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Fontawesome -->
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="public/normalize.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="public/undangan.css" />
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="public/aos.css" />
+
+    <title>Romeo & Juliet | The Invitation</title>
+  </head>
+
+  <body>
+    <section id="lockscreen">
+      <div class="row h-100 text-light">
+        <div class="col-12 text-center d-flex">
+          <div class="m-auto">
+            <h1 data-aos="fade-up" class="my-0 py-0"><i class="far fa-dove"></i><i class="far fa-ring mx-2"></i><i class="far fa-dove fa-flip-horizontal"></i></h1>
+            <h1 class="display-2 my-2" data-aos="fade-in" data-aos-delay="200">Undangan Pernikahan</h1>
+            <p class="fs-6 mb-4" data-aos="fade-in" data-aos-delay="1000">
+              Kepada Bapak/Ibu/Sdr/i <br />
+              <span id="to" class="fw-bold fs-4"></span>
+              <small class="d-block">Mohon maaf bila ada kesalahan pada penulisan nama / gelar</small>
+            </p>
+            <button id="open" class="btn btn-lg btn-outline-light py-3 px-5" onclick="toggleMusic()" data-aos="fade-in" data-aos-delay="3000">Buka Undangan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="home">
+      <div class="d-flex h-100">
+        <div class="m-auto text-center text-white">
+          <h1 class="display-1 my-2">Romeo & Juliet</h1>
+          <p class="fs-4 mb-4">The Wedding</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="head" class="d-flex">
+      <div class="m-auto px-2">
+        <img class="body-head" src="img/bismillah.png" alt="Bismillahirrohmanirrohim" data-aos="fade-in" />
+        <div class="text-center">
+          <h1 class="display-4" data-aos="fade-in">Assalamu'alaikum Wr. Wb.</h1>
+          <p data-aos="fade-in">
+            Dengan rahmat dan ridho Allah SWT <br />
+            InshaAllah kami akan menyelenggarakan pernikahan putra putri kami: <br />
+          </p>
+          <div class="my-5">
+            <h1 class="display-5 my-2" data-aos="fade-in">Romeo</h1>
+            <p data-aos="fade-in">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt?<br />
+              <span class="text-muted">Lorem ipsum dolor sit amet consectetur.</span>
+            </p>
+            <h1 class="fw-bold" data-aos="fade-in">&</h1>
+            <h1 class="display-5 my-2" data-aos="fade-in">Juliet</h1>
+            <p data-aos="fade-in">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat?<br />
+              <span class="text-muted">Lorem ipsum dolor sit amet.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="body">
+      <div class="container py-5">
+        <div class="text-center text-light">
+          <h1 class="display-4" data-aos="slide-right"><i class="far fa-rings-wedding"></i><br />Detail Acara</h1>
+          <div class="row px-5 justify-content-center">
+            <div class="col-lg-5 col-md-6 col-12">
+              <div class="card shadow card-acara p-2 mb-4" data-aos="slide-up">
+                <div class="card-body text-body">
+                  <h2>Akad Nikah</h2>
+                  <i class="fas fa-calendar-day fa-2x mb-3"></i>
+                  <p>Jum'at, 29 Oktober 2021</p>
+                  <hr />
+                  <p>Pukul 08:00 WIB</p>
+                  <i class="fas fa-map-marker-alt fa-2x mb-3"></i>
+                  <p>Kediaman Mempelai Wanita</p>
+                  <hr />
+                  <p>
+                    Lorem, ipsum. RT 03/ RW 04<br />
+                    Lorem ipsum dolor sit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12">
+              <div class="card shadow card-acara p-2 mb-4" data-aos="slide-up" data-aos-delay="400">
+                <div class="card-body text-body">
+                  <h2>Resepsi</h2>
+                  <i class="fas fa-calendar-day fa-2x mb-3"></i>
+                  <p>Minggu, 31 Oktober 2021</p>
+                  <hr />
+                  <p>08:00 s/d 12:00 WIB</p>
+                  <i class="fas fa-map-marker-alt fa-2x mb-3"></i>
+                  <p>Kediaman Mempelai Wanita</p>
+                  <hr />
+                  <p>
+                    Lorem, ipsum. RT 03/ RW 04<br />
+                    Lorem ipsum dolor sit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="countdown" class="col-12 mt-2" data-aos="fade-in">
+              <div class="row justify-content-center">
+                <div class="col-lg-1 col-3 fs-1" id="d">00</div>
+                <div class="col-lg-1 col-3 fs-1" id="h">00</div>
+                <div class="col-lg-1 col-3 fs-1" id="m">00</div>
+                <div class="col-lg-1 col-3 fs-1" id="i">00</div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-1 col-3 fs-6">Hari</div>
+                <div class="col-lg-1 col-3 fs-6">Jam</div>
+                <div class="col-lg-1 col-3 fs-6">Menit</div>
+                <div class="col-lg-1 col-3 fs-6">Detik</div>
+              </div>
+              <p class="mt-4 fs-4">Menuju Hari Istimewa Kami</p>
+            </div>
+          </div>
+        </div>
+        <hr class="my-5 text-secondary" />
+        <div class="text-center text-light">
+          <h1 class="display-4" data-aos="slide-right"><i class="far fa-map"></i><br />Lokasi Acara</h1>
+          <!-- Embed Google Maps -->
+          <div class="mapouter" data-aos="slide-up">
+            <div class="gmap_canvas">
+              <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=-7.219552%20110.378417&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe
+              ><br />
+              <a href="https://www.embedgooglemap.net"></a>
+            </div>
+          </div>
+          <!-- End of Google Maps -->
+          <a href="https://goo.gl/maps/aR87QjziknD68nVJ9" class="btn btn-outline-light py-3 px-4 my-4" target="_blank" data-aos="fade-in">Buka di Google Maps <i class="fas fa-map-marker-alt fa-fw fa-lg"></i></a>
+        </div>
+      </div>
+    </section>
+    <div class="custom-shape-divider-top-1630374983">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+      </svg>
+    </div>
+    <style>
+      .custom-shape-divider-top-1630374983 .shape-fill {
+        fill: rgb(185, 156, 118);
+      }
+    </style>
+
+    <section id="gallery">
+      <h1 class="display-4 text-center" data-aos="slide-right"><i class="far fa-camera-polaroid"></i><br />Galeri</h1>
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide d-flex"><img class="carousel m-auto" src="img/carousel-1.jpg" alt="gallery-1" /></div>
+            <div class="swiper-slide d-flex"><img class="carousel m-auto" src="img/carousel-2.jpg" alt="gallery-2" /></div>
+            <div class="swiper-slide d-flex"><img class="carousel m-auto" src="img/carousel-3.jpg" alt="gallery-3" /></div>
+            <div class="swiper-slide d-flex"><img class="carousel m-auto" src="img/carousel-4.jpg" alt="gallery-4" /></div>
+            <div class="swiper-slide d-flex"><img class="carousel m-auto" src="img/carousel-5.jpg" alt="gallery-5" /></div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+        </div>
+        <hr class="my-5 text-secondary" />
+        <h1 class="display-4 text-center" data-aos="slide-right"><i class="far fa-feather fa-flip-horizontal"></i><br /></h1>
+        <p class="fs-2 text-end" data-aos="fade-in">
+          وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً<span class="mx-2"> ۗ</span>اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+        </p>
+        <p class="lh-lg mt-4" data-aos="fade-in">
+          Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada
+          yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+        </p>
+        <span class="text-secondary" data-aos="fade-in">- QS. Ar-Rum Ayat 21</span>
+      </div>
+    </section>
+
+    <section id="endsection" class="text-light pt-5" data-aos="slide-up">
+      <div class="container text-center">
+        <p class="fw-bold">Atas Doa & Restu dari Bapak/Ibu/Saudara/i<br />Kami Ucapkan Banyak Terima Kasih</p>
+        <br />
+        <p class="fw-bold">Kami yang Berbahagia,</p>
+        <h1 class="display-3">Romeo & Juliet</h1>
+        <p>Romeo & Juliet | The Wedding Invitation</p>
+        <hr class="text-light mt-5" />
+        <div class="pb-3 text-center">
+          <small class="text-light">Ampersand Project &copy; 2021 by <a class="text-light" href="https://www.instagram.com/aryanataandi/" target="_blank" rel="noopener noreferrer">Aryanata</a></small>
+        </div>
+      </div>
+    </section>
+
+    <button class="music-button shadow-lg" title="Hidup/Matikan Musik" onclick="toggleMusic()">
+      <i id="iconMusic" class="fas fa-volume-up text-light fa-fw"></i>
+    </button>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SwiperJS Bundle -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Howler JS -->
+    <script src="public/howler.core.min.js"></script>
+    <script src="public/undangan.js"></script>
+    <!-- aos -->
+    <script src="public/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+    <!-- jquery -->
+    <script src="public/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let lockscreen = $("#lockscreen");
+        let open = $("#open").click(function () {
+          lockscreen.fadeOut();
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
+      });
+    </script>
+  </body>
+</html>
